@@ -14,5 +14,5 @@ test("Checking the comment text", () => {
   const { getByTestId } = render(<Comment commentDetails={commentDetails} />);
 
   const commentText = getByTestId("comment-text");
-  expect(commentText).toBeInTheDocument();
+  expect(commentText.textContent).toBe(commentDetails.commentText);
 });
