@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="comment-wrapper"
+  >
+    <section
+      class="comment-section"
+    >
+      <figure
+        class="avatar"
+      >
+        <img
+          alt="Profile"
+          class="avatar-image"
+          src="https://cdn-images-1.medium.com/fit/c/72/72/0*B0gTOtTQdksop1vG."
+        />
+      </figure>
+      <section
+        class="content-section"
+      >
+        <header
+          class="content-section-header"
+          data-header="header"
+        >
+          <h4
+            class="author-name"
+          >
+            Brad
+          </h4>
+          <span
+            class="commentor"
+          >
+            Author
+          </span>
+          <time
+            class="time"
+          >
+            <small>
+              ●
+            </small>
+             2 Minutes ago
+          </time>
+        </header>
+        <div
+          class="comment-body"
+        >
+          <p
+            data-testid="comment-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veniam quia distinctio temporibus delectus laborum, error qui iusto recusandae nesciunt voluptatem cupiditate.
+          </p>
+        </div>
+        <div
+          class="actions"
+        >
+          <button>
+            Reply
+          </button>
+          <button>
+            <span
+              class="reply-count"
+            >
+              21
+            </span>
+             Replies
+          </button>
+          <button
+            class="vote-up"
+          >
+            123
+          </button>
+          <button
+            class="vote-down"
+          >
+            0
+          </button>
+        </div>
+      </section>
+    </section>
+  </div>
+</DocumentFragment>
+`;

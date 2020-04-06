@@ -1,0 +1,120 @@
+$width: 480px;
+
+.comment-wrapper {
+	width: 80%;
+	margin: 30px auto 0;
+}
+
+.comment-section {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+	grid-gap: 1rem;
+    padding: 20px;
+    @media only screen and (max-width:$width) {
+        grid-template-columns: 1fr;
+	}
+	a, button {
+        transition: all ease-in-out .1s;
+        cursor: pointer
+	}
+	&:hover a, &:hover button {
+		color: #343434;
+	}
+	.avatar {
+        @media only screen and (max-width:$width) {
+            text-align: left;
+        }
+		.avatar-image {
+			display: inline-block;
+			vertical-align: middle;
+            border-radius: 100%;
+            max-width: 50px
+		}
+	}
+}
+
+.content-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+
+    .author-name {
+        font-weight: bold;
+        padding-right: 5px;
+        font-size: 18px;
+    }
+    
+    .commentor {
+        background-color: #343434;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .time {
+        padding-left: 5px;
+        color: #555555;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        small {
+            font-size: 10px;
+            padding-right: 5px;
+        }
+    }
+}
+
+
+
+.comment-body p {
+	color: #343434;
+	padding-bottom: 5px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.actions {
+	display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 14px;
+    button, a {
+        margin-right: 20px;
+		color: #a9a9a9;
+        text-decoration: none;
+        border: none;
+        font-size: 14px;
+        outline: none;
+        &:hover {
+			color: #343434;
+        }
+        &:last-child {
+            margin: 0;
+        }
+        @media only screen and (max-width:$width) {
+		    margin-right: 15px;
+            text-align: left;
+        }
+    }
+    .vote-up::before , .vote-down::before  {
+        font-family: "FontAwesome";
+        padding-right: 5px;
+        font-size: 18px;
+    }
+	.vote-up::before {
+		content: "\f106";
+	}
+	.vote-down::before {
+		content: "\f107";
+	}
+}
